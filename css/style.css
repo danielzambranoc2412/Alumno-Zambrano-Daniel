@@ -11,18 +11,26 @@ min-width: fit-content;
 padding-left: 20px;
 
 }
+.fondo-verde { 
+    background: rgb(110,106,106);
+background: linear-gradient(0deg, rgba(110,106,106,0.7875525210084033) 0%, rgba(242,242,242,1) 80%);
+}
 
 #titulo{
     padding-left: 20px;
     display: flex;
-align-items: flex-end;    
+align-items: flex-end;
+
+
 }
 
 #titulo h1{
         font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     color:black;
-    width: fit-content
+    width: fit-content;
+    margin-left: auto;
+    
 }
 
 #titulo h2{
@@ -34,15 +42,16 @@ align-items: flex-end;
     width: fit-content;
     align-items: flex-end;
     height: fit-content;
+    margin-right: auto;
 }
 
 .menu {
     height: 15px;
-    width: 700px;
+    width:  fit-content;
     display: flex;
     padding-top: 20px;
-    padding-left: 20px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     justify-content: space-between;
     align-items: center;
@@ -54,9 +63,14 @@ align-items: flex-end;
     font-size: 20px;
     font-weight: bolder;
     color: black;
-    }
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;    
+}
+
   .menu li:hover {
       transform: scale(1.1);
+      
   }  
 
 .imagencentral {
@@ -84,6 +98,7 @@ align-items: flex-end;
      display: grid;
      /*width: 80%;
      height: 50%;*/
+     padding-top: 30px;
      grid-template-columns: 200px 200px 200px;
      grid-template-rows: 200px 200px;
 justify-content: center;
@@ -110,10 +125,14 @@ gap: 10px;
     display: flex;
     flex-direction: column;
 align-items: center;
+padding-top: 40px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
+
 .como h2 {
-    padding-top: 50px;
+    padding-top: 40px;
     width: 500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -139,6 +158,18 @@ align-items: center;
 
 .quienes1{
     grid-area: quienes;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+font-weight: bolder;
+}
+.quienes p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+
+
 }
 
 
@@ -146,12 +177,12 @@ fieldset {
     margin-top: 5%;
     height: 200px;
     width: 500px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
  fieldset legend {
      font-size: large;
  }
- fieldset form {padding-top: 50px;}
+ fieldset form {padding-top: 20px;}
  
  .textoatencion{
           font-style: italic;
@@ -171,7 +202,17 @@ fieldset {
 
 align-items: center;
 }
- 
+.marcolegalgaleria{
+    padding-top: 50px;
+    
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   font-size: 20px;
+   color:black;
+
+align-items: center;
+}
 
  .flexcontainer{
      display: flex;
@@ -188,3 +229,15 @@ align-items: center;
      display: flex;
      flex-direction: column;
  }
+ .infcontacto legend {margin-left: auto;
+
+margin-right: auto;}
+
+.formulariovertical {display: flex;
+flex-direction: column;
+align-items: center;}
+
+.formulariovertical input {
+    
+    width: 250px }
+
