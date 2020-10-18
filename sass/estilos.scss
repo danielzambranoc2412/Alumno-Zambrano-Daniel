@@ -1,7 +1,3 @@
- *{
-    padding: 0;
-    margin: 0;
-}
 body {background-color: #ffffe6;}  
 nav { /* background-image: url(https://media.freestocktextures.com/cache/17/52/1752e2d7d93bb646a28af94125af1bdf.jpg);
 */ background-image: linear-gradient(to top, #ecd9c6,#f9f2ec);
@@ -21,19 +17,15 @@ background: linear-gradient(0deg, rgba(110,106,106,0.7875525210084033) 0%, rgba(
     display: flex;
 align-items: flex-end;
 
+h1{
+    font-size: 40px;
+font-family: 'Courier New', Courier, monospace;
+color:black;
+width: fit-content;
+margin-left: auto;
 
 }
-
-#titulo h1{
-        font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    color:black;
-    width: fit-content;
-    margin-left: auto;
-    
-}
-
-#titulo h2{
+h2{
     padding-left: 20px;
     justify-content: flex-end;
         font-size: 20px;
@@ -44,6 +36,9 @@ align-items: flex-end;
     height: fit-content;
     margin-right: auto;
 }
+
+}
+
 
 .menu {
     height: 15px;
@@ -56,22 +51,22 @@ align-items: flex-end;
     justify-content: space-between;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
+    a { text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: black;
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;    
+    }
+    li:hover {
+        transform: scale(1.1);
+        
+    }  
 
 }
 
- .menu a { text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-    color: black;
-    width: fit-content;
-    padding-left: 30px;
-    padding-right: 30px;    
-}
-
-  .menu li:hover {
-      transform: scale(1.1);
-      
-  }  
+  
 
 .imagencentral {
    border: 20px violet;
@@ -82,11 +77,12 @@ align-items: flex-end;
 
  .wsp {
      float: right;
-    
+ 
+     &:hover{
+        transform: scale(1.3);
+    }
  }
- .wsp:hover{
-     transform: scale(1.3);
- }
+
 
  .textocentro{
      font-size: 18px;
@@ -111,12 +107,11 @@ gap: 10px;
      border-style: solid;
      transition: transform 1s;
      cursor: pointer;
- }
-
- .griditem:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+        }
     }
- 
+
  
 
 
@@ -128,21 +123,19 @@ align-items: center;
 padding-top: 40px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-
-
-.como h2 {
+h2 {
     padding-top: 40px;
     width: 500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.como p {
+p {
     padding-top: 30px;
     width: 600px;
     padding-bottom: 100px;
     font-size: 18px;
     font-style: oblique;
 
+}
 }
 
 .quienes{
@@ -154,6 +147,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
    grid-template-areas: 
    "quienes quienes";
    align-items: center;
+   p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+
+
+}
+
 }
 
 .quienes1{
@@ -165,12 +165,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 font-size: 20px;
 font-weight: bolder;
 }
-.quienes p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 15px;
-
-
-}
+ 
 
 
 fieldset {
@@ -178,12 +173,10 @@ fieldset {
     height: 200px;
     width: 500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
- fieldset legend {
-     font-size: large;
- }
- fieldset form {padding-top: 20px;}
- 
+     legend {
+     font-size: large;}
+     form {padding-top: 20px;}
+     }
  .textoatencion{
           font-style: italic;
      font-weight: bolder;
@@ -218,26 +211,29 @@ align-items: center;
      display: flex;
 /*     flex-direction: row;*/
      font-size: 20px;
- }
+     img {
+        padding-left: 30px;
+    }
+    }
 
- .flexcontainer img {
-     padding-left: 30px;
- }
+ 
 
  .infcontacto{
      align-items: center;
      display: flex;
      flex-direction: column;
- }
- .infcontacto legend {margin-left: auto;
+     legend {margin-left: auto;
 
-margin-right: auto;}
+        margin-right: auto;}
+    }
+ 
 
 .formulariovertical {display: flex;
 flex-direction: column;
-align-items: center;}
-
-.formulariovertical input {
+align-items: center;
+input {
     
     width: 250px }
+}
+
 
