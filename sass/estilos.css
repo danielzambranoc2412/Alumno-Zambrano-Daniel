@@ -344,88 +344,82 @@ fieldset form {
   width: 250px;
 }
 
+/*
 @media (max-width: 891px) {
-  .menu {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0;
-  }
-  .menu a {
-    font-size: 18px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
+    .menu {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0;
+a {
+   font-size: 18px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+}
 }
 
 @media (max-width: 780px) {
-  #titulo {
-    padding-left: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #titulo h1 {
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  #titulo h2 {
-    padding-left: 20px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
+    
+
+    #titulo{
+                padding-left: 20px;
+        display: flex;
+
+        h1{
+            font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color:black;
+        width: fit-content;
+       
+        }
+        h2{
+            padding-left: 20px;
             justify-content: flex-end;
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #604020;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
+                font-size: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            color:#604020;
+            width: fit-content;
             align-items: flex-end;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-right: auto;
-  }
-  .menu {
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0;
-  }
-  .menu a {
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+            height: fit-content;
+            margin-right: auto;}
+     }
+     .menu {
+                 margin-left: 0%;
+                 margin-right: 0%;
+                 padding-left: 0;
+        a {
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    
 }
 
+*/
 @media (max-width: 350px) {
   body {
     background-color: white;
   }
   #titulo {
-    padding-left: 10px;
+    padding-left: 1px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   #titulo h1 {
-    font-size: 15px;
+    font-size: 10px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin-left: auto;
   }
   #titulo h2 {
-    padding-left: 8px;
+    padding-left: 5px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-size: 10px;
+    font-size: 5px;
     font-family: 'Courier New', Courier, monospace;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -438,13 +432,20 @@ fieldset form {
     height: fit-content;
     margin-right: auto;
   }
+  nav {
+    height: auto;
+  }
   .menu {
-    width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0%;
+    padding-top: 1px;
   }
   .menu a {
-    font-size: 9px;
-    padding-right: 5px;
-    padding-left: 5px;
+    font-size: 6px;
+    padding-right: 3.5px;
+    padding-left: 3.5px;
   }
   .imagencentral {
     display: none;
@@ -457,14 +458,14 @@ fieldset form {
     padding-top: 15px;
   }
   .textocentro {
-    font-size: 12px;
+    font-size: 9px;
   }
   .marcolegal {
     padding-top: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
   .flexcontainer {
-    font-size: 12px;
+    font-size: 10px;
   }
   .flexcontainer img {
     display: none;
@@ -474,7 +475,7 @@ fieldset form {
     display: block;
   }
   .quienes1 {
-    font-size: 15px;
+    font-size: 10px;
   }
   .quienes {
     -ms-grid-rows: 15px 200px;
@@ -483,7 +484,8 @@ fieldset form {
         grid-template-columns: 125px 125px;
   }
   .quienes p {
-    font-size: 10px;
+    padding-left: 5px;
+    font-size: 7px;
   }
   .plantas1 {
     display: none;
@@ -497,37 +499,51 @@ fieldset form {
   }
   .como h2 {
     padding-top: 0px;
-    font-size: 12px;
+    font-size: 10px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .como p {
-    font-size: 12px;
+    font-size: 8px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .infcontacto {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   fieldset {
     margin-top: 5%;
     height: 150px;
-    width: 250px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   fieldset legend {
-    font-size: 15px;
+    font-size: 10px;
   }
   fieldset form {
     padding-top: 20px;
   }
   .formulariovertical {
-    font-size: 10px;
+    font-size: 7px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding-top: 5px;
   }
+  .formulariovertical input {
+    width: 150px;
+    height: auto;
+  }
   .textoatencion {
-    font-size: 10px;
+    font-size: 7px;
   }
   .gridgaleria {
     width: -webkit-fit-content;
@@ -538,10 +554,10 @@ fieldset form {
     margin-right: auto;
     margin-left: auto;
     padding-top: 30px;
-    -ms-grid-columns: 80px 80px 80px;
-        grid-template-columns: 80px 80px 80px;
-    -ms-grid-rows: 75px 75px 75px;
-        grid-template-rows: 75px 75px 75px;
+    -ms-grid-columns: 70px 70px 70px;
+        grid-template-columns: 70px 70px 70px;
+    -ms-grid-rows: 65px 65px 65px;
+        grid-template-rows: 65px 65px 65px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

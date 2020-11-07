@@ -251,7 +251,7 @@ input {
     
     width: 250px }
 }
-
+/*
 @media (max-width: 891px) {
 
     .menu {
@@ -304,7 +304,7 @@ a {
     
 }
 
-
+*/
 
 
 @media (max-width: 350px) {
@@ -312,33 +312,38 @@ a {
 
     #titulo{
          
-        padding-left: 10px;
+        padding-left: 1px;
         display: flex;
 
         h1{
-            font-size: 15px;
+            font-size: 10px;
             width: fit-content;
-             margin-left: auto;
+             
         }
         h2{
             
-            padding-left: 8px;
+            padding-left: 5px;
             justify-content: flex-end;
-                font-size: 10px;
+                font-size: 5px;
             font-family: 'Courier New', Courier, monospace;
             width: fit-content;
             align-items: flex-end;
             height: fit-content;
             margin-right: auto;}
      }
+      nav{
+        height: auto;
+      }
 
      .menu { 
-         width: 100%;
+         width: fit-content;
+         margin: 0%;
+         padding-top: 1px;
 
          a {
-             font-size: 9px;
-             padding-right: 5px;
-             padding-left: 5px;
+             font-size: 6px;
+             padding-right: 3.5px;
+             padding-left: 3.5px;
          }
      }
         
@@ -354,15 +359,15 @@ a {
     padding-top: 15px;}
 
     .textocentro {
-        font-size: 12px;
+        font-size: 9px;
     }
 
 .marcolegal{
     padding-top: 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 .flexcontainer {
-    font-size: 12px;
+    font-size: 10px;
     img {
         display: none;
     padding-left: 0px;
@@ -372,13 +377,14 @@ a {
     }}
 
     .quienes1 {
-        font-size: 15px;
+        font-size: 10px;
     }
     .quienes{
         grid-template-rows: 15px 200px;
     grid-template-columns: 125px 125px;
     p{
-        font-size: 10px;
+        padding-left: 5px;
+        font-size: 7px;
     } }
     .plantas1 {
         display: none;}
@@ -388,28 +394,41 @@ a {
         .como {
             padding-top: 0px;
                 h2{ padding-top: 0px;
-                    font-size:12px 
+                    font-size:10px 
                     ;
                 width: fit-content;}
-                    p {font-size: 12px;
+                    p {font-size: 8px;
                     width: fit-content;
                 padding-top: 0px;
             padding-bottom: 0px;
         }
         }
+        .infcontacto {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         fieldset {
             margin-top: 5%;
             height: 150px;
-            width: 250px;
+            width: fit-content;
+            
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
              legend {
-             font-size: 15px;}
+             font-size: 10px;}
              form {padding-top: 20px;}
              }
-             .formulariovertical{font-size: 10px;
-            padding-top:5px}
+             .formulariovertical{font-size: 7px;
+                width: fit-content;
+            padding-top:5px;
+            input {
+                width: 150px;
+                height: auto;
+            }
+        }
+    
              .textoatencion{
-                font-size:10px;
+                font-size:7px;
        }
        .gridgaleria{
            width: fit-content;
@@ -417,8 +436,8 @@ a {
         margin-right: auto;
         margin-left: auto;
             padding-top: 30px;
-        grid-template-columns: 80px 80px 80px;
-        grid-template-rows: 75px 75px 75px;
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 65px 65px 65px;
    justify-content: center;
    justify-items: center;
    align-items: center;
